@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Employee List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Job Title</th>
+                <th>Working Days</th>
+                <th>Leave Days</th>
+                <th>Daily Wage (Rp)</th>
+                <th>Monthly Salary (Rp)</th>
+                <th>Overtime (Rp)</th>
+                <th>Deductions (Rp)</th>
+                <th>Total Salary (Rp)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aripin Sihabudin</td>
+                <td>Engineering</td>
+                <td>Software Engineer</td>
+                <td>22</td>
+                <td>2</td>
+                <td>Rp 318.182</td>
+                <td>Rp 7.000.000</td>
+                <td>Rp 500.000</td>
+                <td>Rp 200.000</td>
+                <td>Rp 7.300.000</td>
+            </tr>
+            <tr>
+                <td>Yanti Kartika</td>
+                <td>Marketing</td>
+                <td>Marketing Manager</td>
+                <td>21</td>
+                <td>3</td>
+                <td>Rp 380.952</td>
+                <td>Rp 8.000.000</td>
+                <td>Rp 600.000</td>
+                <td>Rp 150.000</td>
+                <td>Rp 8.450.000</td>
+            </tr>
+            <tr>
+                <td>Budi Santoso</td>
+                <td>Sales</td>
+                <td>Sales Executive</td>
+                <td>20</td>
+                <td>5</td>
+                <td>Rp 250.000</td>
+                <td>Rp 6.000.000</td>
+                <td>Rp 400.000</td>
+                <td>Rp 100.000</td>
+                <td>Rp 6.300.000</td>
+            </tr>
+            <tr>
+                <td>Indah Lestari</td>
+                <td>HR</td>
+                <td>HR Manager</td>
+                <td>23</td>
+                <td>1</td>
+                <td>Rp 333.333</td>
+                <td>Rp 8.000.000</td>
+                <td>Rp 550.000</td>
+                <td>Rp 250.000</td>
+                <td>Rp 8.300.000</td>
+            </tr>
+            <tr>
+                <td>Rudi Hartono</td>
+                <td>IT</td>
+                <td>Network Administrator</td>
+                <td>19</td>
+                <td>4</td>
+                <td>Rp 263.158</td>
+                <td>Rp 5.000.000</td>
+                <td>Rp 300.000</td>
+                <td>Rp 120.000</td>
+                <td>Rp 5.180.000</td>
+            </tr>
+            <tr>
+                <td>Ani Widodo</td>
+                <td>Finance</td>
+                <td>Accountant</td>
+                <td>22</td>
+                <td>2</td>
+                <td>Rp 290.909</td>
+                <td>Rp 6.400.000</td>
+                <td>Rp 450.000</td>
+                <td>Rp 180.000</td>
+                <td>Rp 6.670.000</td>
+            </tr>
+            <tr>
+                <td>Andi Pratama</td>
+                <td>Customer Support</td>
+                <td>Support Specialist</td>
+                <td>21</td>
+                <td>3</td>
+                <td>Rp 238.095</td>
+                <td>Rp 5.000.000</td>
+                <td>Rp 350.000</td>
+                <td>Rp 90.000</td>
+                <td>Rp 5.260.000</td>
+            </tr>
+            <tr>
+                <td>Rina Utami</td>
+                <td>Development</td>
+                <td>Frontend Developer</td>
+                <td>22</td>
+                <td>2</td>
+                <td>Rp 318.182</td>
+                <td>Rp 7.000.000</td>
+                <td>Rp 400.000</td>
+                <td>Rp 100.000</td>
+                <td>Rp 7.300.000</td>
+            </tr>
+            <tr>
+                <td>Dedi Kurniawan</td>
+                <td>Development</td>
+                <td>Backend Developer</td>
+                <td>21</td>
+                <td>3</td>
+                <td>Rp 357.143</td>
+                <td>Rp 7.500.000</td>
+                <td>Rp 500.000</td>
+                <td>Rp 150.000</td>
+                <td>Rp 7.850.000</td>
+            </tr>
+            <tr>
+                <td>Sri Wahyuni</td>
+                <td>Legal</td>
+                <td>Legal Advisor</td>
+                <td>20</td>
+                <td>5</td>
+                <td>Rp 400.000</td>
+                <td>Rp 8.000.000</td>
+                <td>Rp 600.000</td>
+                <td>Rp 200.000</td>
+                <td>Rp 8.400.000</td>
+            </tr>
+            <tr>
+                <td>Fajar Setiawan</td>
+                <td>Operations</td>
+                <td>Operations Manager</td>
+                <td>22</td>
+                <td>2</td>
+                <td>Rp 318.182</td>
+                <td>Rp 7.000.000</td>
+                <td>Rp 450.000</td>
+                <td>Rp 120.000</td>
+                <td>Rp 7.330.000</td>
+            </tr>
+            <tr>
+                <td>Wulan Andini</td>
+                <td>Design</td>
+                <td>Graphic Designer</td>
+                <td>23</td>
+                <td>1</td>
+                <td>Rp 260.870</td>
+                <td>Rp 6.000.000</td>
+                <td>Rp 300.000</td>
+                <td>Rp 90.000</td>
+                <td>Rp 6.210.000</td>
+            </tr>
+            <tr>
+               
